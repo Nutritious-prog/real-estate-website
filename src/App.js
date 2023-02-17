@@ -1,9 +1,10 @@
 import './App.css';
+import TopContactInfo from './components/TopContactInfo';
 
 function App() {
   return (
     <div>
-      <p className='text-red-600'>Test</p>
+      <TopContactInfo />
     </div>
   );
 }
