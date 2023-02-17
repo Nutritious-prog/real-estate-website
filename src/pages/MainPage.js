@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import Hero from "../components/Hero";
 import Navigation from "../components/Navigation";
 import Preloader from "../components/Preloader";
 import TopContactInfo from "../components/TopContactInfo";
@@ -20,6 +21,7 @@ function MainPage() {
         <>
           <TopContactInfo />
           <Navigation />
+          <Hero />
         </>
       )}
     </>
