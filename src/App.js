@@ -1,10 +1,10 @@
 import './App.css';
-import TopContactInfo from './components/TopContactInfo';
+import MainPage from './pages/MainPage';
 
 function App() {
   return (
     <div>
-      <TopContactInfo />
+      <MainPage />
     </div>
   );
 }
