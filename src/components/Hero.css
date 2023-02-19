@@ -1,14 +1,13 @@
 .slide-one-bg, .slide-two-bg, .slide-three-bg{
     overflow: auto;
     position: relative;
-    z-index: -1;
 }
 .slide-one-bg::before, .slide-two-bg::before , .slide-three-bg::before  {
     content: "";
     position: absolute;
     left: 0;
     right: 0;
-    z-index: -2;
+    z-index: -1;
   
     background-image: url('../assets/house-one.jpeg');
     background-size: auto;

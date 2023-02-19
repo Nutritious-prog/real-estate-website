@@ -1,8 +1,10 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Link as ScrollLink } from "react-scroll";
 import { Link as OuterLink } from "react-router-dom";
 import { FaGreaterThan } from "react-icons/fa";
 
+import Aos from "aos";
+// import "aos/dist/aos.css";
 
 import logo from "../assets/logo.png";
 
@@ -10,6 +12,10 @@ function Navigation() {
   const [nav, setNav] = useState(false);
 
   const handleClick = () => setNav(!nav);
+
+  useEffect(() => {
+    Aos.init();
+  }, []);
 
   return (
     // whole nav
@@ -96,10 +102,15 @@ function Navigation() {
       </div>
       {/* hidden nav */}
       <ul
+      data-aos={
+        !nav
+          ? "none"
+          : "fade-down"
+      }
         className={
           !nav
-            ? "hidden"
-            : "absolute w-full px-8 mt-20 burgermenu pb-8"
+            ? "hidden "
+            : "absolute w-full px-8 mt-20 burgermenu pb-8 bg-white z-10"
         }
       >
         <li className="border-b-2 border-[#C28563] w-full p-4 hover:cursor-pointer hover-underline-animation">
