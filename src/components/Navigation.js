@@ -19,7 +19,7 @@ function Navigation() {
 
   return (
     // whole nav
-    <div className="w-screen flex bg-white border-b z-10">
+    <div className="w-screen flex bg-white border-b z-10 sticky top-0 shadow-sm">
       {/* container for logo, menu and button */}
       <div className="w-[100%] lg:w-[90%] md:w-[80%] mx-auto flex justify-between py-3 font-bold tracking-widest">
         {/* logo */}

@@ -3,6 +3,7 @@ import Hero from "../components/Hero";
 import Navigation from "../components/Navigation";
 import Preloader from "../components/Preloader";
 import TopContactInfo from "../components/TopContactInfo";
+import Welcome from "../components/Welcome";
 
 function MainPage() {
   const [loading, setLoading] = useState(false);
@@ -22,6 +23,7 @@ function MainPage() {
           <TopContactInfo />
           <Navigation />
           <Hero />
+          <Welcome />
         </>
       )}
     </>
