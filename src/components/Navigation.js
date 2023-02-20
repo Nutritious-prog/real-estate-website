@@ -19,7 +19,7 @@ function Navigation() {
 
   return (
     // whole nav
-    <div className="w-screen flex bg-white border-b z-10 sticky top-0 shadow-sm">
+    <div className="w-screen flex bg-white z-10 sticky top-0 shadow-md">
       {/* container for logo, menu and button */}
       <div className="w-[100%] lg:w-[90%] md:w-[80%] mx-auto flex justify-between py-3 font-bold tracking-widest">
         {/* logo */}
@@ -27,27 +27,33 @@ function Navigation() {
           <img src={logo} alt="" />
         </div>
         {/* menu */}
-        <div className="w-[40%] mr-[4%] my-auto">
+        <div className="w-[50%] mr-[4%] my-auto roboto-font">
           <ul className="hidden xl:flex justify-around py-4">
-            <li className="hover:cursor-pointer hover-underline-animation font-light group transition duration-300">
+            <li className="hover:cursor-pointer hover-underline-animation font-normal group transition duration-300">
               <ScrollLink to="aboutBiorezonans" smooth={true} duration={500}>
                 HOME
                 <span class="block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-[#C28563]"></span>
               </ScrollLink>
             </li>
-            <li className="hover:cursor-pointer hover-underline-animation font-light group transition duration-300">
+            <li className="hover:cursor-pointer hover-underline-animation font-normal group transition duration-300">
+              <ScrollLink to="aboutBiorezonans" smooth={true} duration={500}>
+                LOCALISATION
+                <span class="block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-[#C28563]"></span>
+              </ScrollLink>
+            </li>
+            <li className="hover:cursor-pointer hover-underline-animation font-normal group transition duration-300">
               <ScrollLink to="offer" smooth={true} duration={500}>
                 OFFER
                 <span class="block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-[#C28563]"></span>
               </ScrollLink>
             </li>
-            <li className="hover:cursor-pointer hover-underline-animation font-light group transition duration-300">
+            <li className="hover:cursor-pointer hover-underline-animation font-normal group transition duration-300">
               <ScrollLink to="apparatus" smooth={true} duration={500}>
                 APARTMENTS
                 <span class="block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-[#C28563]"></span>
               </ScrollLink>
             </li>
-            <li className="hover:cursor-pointer hover-underline-animation font-light group transition duration-300">
+            <li className="hover:cursor-pointer hover-underline-animation font-normal group transition duration-300">
               <ScrollLink to="opinions" smooth={true} duration={500}>
                 CONTACT US
                 <span class="block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-[#C28563]"></span>
