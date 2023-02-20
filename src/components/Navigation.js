@@ -28,7 +28,7 @@ function Navigation() {
         </div>
         {/* menu */}
         <div className="w-[50%] mr-[4%] my-auto montserrat-font text-sm">
-          <ul className="hidden xl:flex justify-around py-4">
+          <ul className="hidden xl:flex justify-around py-4 list-none">
             <li className="hover:cursor-pointer hover-underline-animation font-normal group transition duration-300 hover:text-[#C28563]">
               <ScrollLink to="aboutBiorezonans" smooth={true} duration={500}>
                 HOME

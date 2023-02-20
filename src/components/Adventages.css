@@ -20,12 +20,12 @@
     filter: brightness(20%);
 }
 
-ul {
+.dotted-ul {
     list-style: none; /* Remove default bullets */
     list-style-position: inside;
   }
   
-  ul li::before {
+  .dotted-ul li::before {
     content: "\25A0";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
     color: #C28563; /* Change the color */
     display: inline-block; /* Needed to add space between the bullet and the text */

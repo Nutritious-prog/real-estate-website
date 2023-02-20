@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import Advantages from "../components/Advantages";
 import Hero from "../components/Hero";
+import HousesTable from "../components/HousesTable";
 import Navigation from "../components/Navigation";
 import Preloader from "../components/Preloader";
 import TopContactInfo from "../components/TopContactInfo";
@@ -26,6 +27,7 @@ function MainPage() {
           <Hero />
           <Welcome />
           <Advantages />
+          <HousesTable />
         </>
       )}
     </>

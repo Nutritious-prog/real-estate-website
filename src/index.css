@@ -23,6 +23,11 @@ code {
   color: white;
 }
 
+::-webkit-scrollbar-track {
+  background: #C28563;
+  color: #C28563;;
+}
+
 .montserrat-font {
   font-family: 'Montserrat',
     sans-serif;
