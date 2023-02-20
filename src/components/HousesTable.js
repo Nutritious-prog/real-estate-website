@@ -1,5 +1,7 @@
 import React from "react";
-import { FaHandHoldingUsd, FaGreaterThan } from "react-icons/fa";
+import { Link as OuterLink } from "react-router-dom";
+import { FaGreaterThan } from "react-icons/fa";
+
 
 import { styled } from "@mui/material/styles";
 import Table from "@mui/material/Table";
@@ -33,16 +35,24 @@ const StyledTableRow = styled(TableRow)(({ theme }) => ({
   },
 }));
 
-function createData(name, rooms, bathrooms, surface, price, avaliability) {
-  return { name, rooms, bathrooms, surface, price, avaliability };
+function createData(
+  name,
+  rooms,
+  bathrooms,
+  surface,
+  price,
+  avaliability,
+  link
+) {
+  return { name, rooms, bathrooms, surface, price, avaliability, link };
 }
 
 const rows = [
-  createData("House A", 8, 2, 182.0, 4700.0, true),
+  createData("House A", 8, 2, 182.0, 4700.0, true, "/houses/house-a"),
   createData("House B", 12, 2, 193.0, 6200.0, false),
-  createData("House C", 9, 3, 215.0, 7200.0, true),
+  createData("House C", 9, 3, 215.0, 7200.0, true, "/houses/house-a"),
   createData("House D", 7, 1, 122.0, 6800.0, false),
-  createData("House E", 10, 2, 181.0, 9300.0, true),
+  createData("House E", 10, 2, 181.0, 9300.0, true, "/houses/house-a"),
 ];
 
 function HousesTable() {
@@ -76,7 +86,10 @@ function HousesTable() {
               </TableHead>
               <TableBody>
                 {rows.map((row) => (
-                  <StyledTableRow key={row.name} className={row.avaliability ? "" : "opacity-40"}>
+                  <StyledTableRow
+                    key={row.name}
+                    className={row.avaliability ? "" : "opacity-40"}
+                  >
                     <StyledTableCell component="th" scope="row">
                       {row.name}
                     </StyledTableCell>
@@ -90,13 +103,22 @@ function HousesTable() {
                       {row.surface} &#13217;
                     </StyledTableCell>
                     <StyledTableCell align="center">
-                      {row.price} zł
+                      {row.price} zł/&#13217;
                     </StyledTableCell>
                     <StyledTableCell align="center">
                       {row.avaliability ? (
-                        <p className="text-green-500">TAK</p>
+                        <OuterLink to={row.link}>
+                          <div className="flex w-full">
+                          <button className="flex w-fit mx-auto bg-[#C28563] text-white tracking-widest p-1 ease-in duration-500 hover:bg-[#19130B]">
+                            <p className="p-2 font-bold">Zobacz teraz!</p>
+                            <p className="p-[0.65rem] font-thin">
+                              <FaGreaterThan />
+                            </p>
+                          </button>
+                          </div>
+                        </OuterLink>
                       ) : (
-                        <p className="text-red-500">NIE</p>
+                        <p>Sprzedane...</p>
                       )}
                     </StyledTableCell>
                   </StyledTableRow>

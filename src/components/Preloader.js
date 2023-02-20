@@ -1,6 +1,6 @@
 import React from 'react'
 
-import logo from '../assets/logo.png'
+import logo from '../assets/logo-test-1.png'
 function Preloader() {
   return (
     <div className='preloaderContainer   w-full h-[100vh] flex'>

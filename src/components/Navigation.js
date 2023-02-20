@@ -1,12 +1,11 @@
 import React, { useState, useEffect } from "react";
 import { Link as ScrollLink } from "react-scroll";
-import { Link as OuterLink } from "react-router-dom";
 import { FaGreaterThan } from "react-icons/fa";
 
 import Aos from "aos";
 // import "aos/dist/aos.css";
 
-import logo from "../assets/logo.png";
+import logo from "../assets/logo-test-1.png";
 
 function Navigation() {
   const [nav, setNav] = useState(false);
@@ -64,7 +63,7 @@ function Navigation() {
         {/* button */}
         <ScrollLink to="contact" smooth={true} duration={500}>
           <button
-            className="xl:flex hidden bg-[#C28563] text-white tracking-widest p-3 ease-in duration-500 hover:bg-[#19130B]"
+            className="xl:flex hidden mt-2 bg-[#C28563] text-white tracking-widest p-3 ease-in duration-500 hover:bg-[#19130B]"
           >
             <p className="p-2">MORE INFO</p>
             <p className="p-3 font-thin"><FaGreaterThan /></p>

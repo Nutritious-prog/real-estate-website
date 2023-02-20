@@ -4,6 +4,7 @@ import Hero from "../components/Hero";
 import HousesTable from "../components/HousesTable";
 import Navigation from "../components/Navigation";
 import Preloader from "../components/Preloader";
+import Testimonials from "../components/Testimonials";
 import TopContactInfo from "../components/TopContactInfo";
 import Welcome from "../components/Welcome";
 
@@ -28,6 +29,7 @@ function MainPage() {
           <Welcome />
           <Advantages />
           <HousesTable />
+          <Testimonials />
         </>
       )}
     </>
