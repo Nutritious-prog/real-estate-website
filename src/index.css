@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=Maven+Pro:wght@400;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=Open+Sans:wght@100;300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=Montserrat:wght@100;300;400;500;700;900&display=swap');
 
 body {
   margin: 0;
@@ -23,8 +23,8 @@ code {
   color: white;
 }
 
-.roboto-font {
-  font-family: 'Open Sans',
+.montserrat-font {
+  font-family: 'Montserrat',
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;

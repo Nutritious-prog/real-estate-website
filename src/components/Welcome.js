@@ -6,8 +6,8 @@ import home_two from "../assets/lux-home-two.jpeg";
 
 function Welcome() {
   return (
-    <div className="w-screen flex mt-10">
-      <div className="w-[100%] lg:w-[90%] md:w-[80%] mx-auto flex justify-between xl:flex-row flex-col p-2">
+    <div className="w-screen flex mt-10 pb-10">
+      <div className="w-[100%] lg:w-[90%] md:w-[80%] mx-auto flex justify-between xl:flex-row flex-col">
         {/* left */}
         <div className="xl:w-[45%] w-full p-3 relative">
           <div className="xl:w-[90%] w-[75%] h-auto">
@@ -19,7 +19,7 @@ function Welcome() {
         </div>
         {/* right */}
         <div className="xl:w-1/2 p-3 w-full tracking-widest">
-          <p className="text-[#C28563] py-2 text-xl font-bold">
+          <p className="text-[#C28563] py-2 text-lg montserrat-font">
             WELCOME TO PROPATY
           </p>
           <h1 className="font-bold text-5xl py-4">
@@ -46,7 +46,7 @@ function Welcome() {
             </div>
           </div>
 
-          <h2 className="text-[#C28563] py-4 text-xl font-bold mt-3">
+          <h2 className="text-[#C28563] py-4 text-lg mt-3 montserrat-font">
             ROYAL TOUCH PAINT SPRING SECQURITY
           </h2>
           <p className="tracking-normal text-xl">
