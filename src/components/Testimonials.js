@@ -1,5 +1,5 @@
 import React from 'react'
-import { FaHandHoldingUsd, FaGreaterThan, FaStar } from "react-icons/fa";
+import { FaStar } from "react-icons/fa";
 
 import './Advantages.css'
 
@@ -8,7 +8,7 @@ function Testimonials() {
     <div className="w-full flex testimonials pb-10">
       <div className="w-[100%] lg:w-[90%] md:w-[80%] mx-auto flex flex-col">
         {/* UP PART */}
-        <div className="w-[75%] text-center mx-auto flex flex-col py-14">
+        <div className="w-[75%] text-center mx-auto flex flex-col py-14 mt-10">
           <p className="text-[#C28563] py-2 text-lg montserrat-font">TESTIMONIALS</p>
           <h2 className="font-bold text-5xl py-4 text-white">SEE WHAT OUR CLIENTS WANT TO SAYS</h2>
         </div>
