@@ -56,7 +56,7 @@ function Contact() {
                   type="text"
                   name="phone_number"
                   placeholder="PHONE NUMBER"
-                  value={toSend.to_name}
+                  value={toSend.phone_number}
                   onChange={handleChange}
                 />
               </div>
@@ -64,14 +64,14 @@ function Contact() {
                 type="text"
                 name="email_address"
                 placeholder="EMAIL ADDRESS"
-                value={toSend.reply_to}
+                value={toSend.email_address}
                 onChange={handleChange}
               />
               <input
                 type="text"
                 name="subject"
                 placeholder="SUBJECT"
-                value={toSend.reply_to}
+                value={toSend.subject}
                 onChange={handleChange}
               />
               <input
