@@ -1,7 +1,7 @@
 import React from "react";
 import { FaHandHoldingUsd, FaGreaterThan } from "react-icons/fa";
 
-import "./Adventages.css";
+import "./Advantages.css";
 
 function Advantages() {
   return (
