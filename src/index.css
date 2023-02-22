@@ -64,3 +64,8 @@ code {
 .arrowed-ul li::before {
   content: "\FE65";
 }
+
+.gallery-image {
+  height: 100%;
+  width: auto;
+}

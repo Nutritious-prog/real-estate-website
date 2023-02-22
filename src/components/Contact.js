@@ -12,8 +12,6 @@ function Contact() {
     message: "",
   });
 
-  const [isFormValid, setIsFormValid] = useState(false);
-
   const onSubmit = (e) => {
     e.preventDefault();
     send("service_492o64a", "template_dhbtg9c", toSend, "J07gu0P6KsaZL9Fdu")

@@ -1,0 +1,15 @@
+.tile-background {
+    background-image: url("../assets/house-two.jpeg");
+    background-size: cover;    
+    background-position: center;
+}
+.tile-background-two {
+    background-image: url("../assets/house-one.jpeg");
+    background-size: cover;    
+    background-position: center;
+}
+.tile-background-three {
+    background-image: url("../assets/lux-home-one.jpeg");
+    background-size: cover;
+    background-position: center;
+}
