@@ -4,7 +4,7 @@ import Zoom from "react-medium-image-zoom";
 import "react-medium-image-zoom/dist/styles.css";
 
 import plan from "../../assets/house-plan.jpeg";
-import { FaGreaterThan, FaHome, FaShieldAlt } from "react-icons/fa";
+import { FaGreaterThan } from "react-icons/fa";
 
 
 function HouseDescription() {
@@ -38,19 +38,19 @@ function HouseDescription() {
             humour, or randomised words which don't look.
           </p>
 
-          <div className="flex w-full justify-between py-5 border-b-[1px] border-slate-200 xl:flex-row flex-col">
+          <div className="flex w-full justify-between py-5 border-b-[1px] border-slate-200">
             <p>Pokoje</p>
             <p>5</p>
           </div>
-          <div className="flex w-full justify-between py-5 border-b-[1px] border-slate-200 xl:flex-row flex-col">
+          <div className="flex w-full justify-between py-5 border-b-[1px] border-slate-200 ">
             <p>Powierzchnia domu</p>
             <p>117 m<sup>2</sup></p>
           </div>
-          <div className="flex w-full justify-between py-5 border-b-[1px] border-slate-200 xl:flex-row flex-col">
+          <div className="flex w-full justify-between py-5 border-b-[1px] border-slate-200">
             <p>Powierzchnia działki</p>
             <p>285 m<sup>2</sup></p>
           </div>
-          <div className="flex w-full justify-between py-5 border-b-[1px] border-slate-200 xl:flex-row flex-col">
+          <div className="flex w-full justify-between py-5 border-b-[1px] border-slate-200">
             <p>Łazienki</p>
             <p>2</p>
           </div>

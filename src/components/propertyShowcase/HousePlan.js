@@ -22,7 +22,7 @@ function HousePlan() {
       <span className="block w-[10%] h-1 bg-[#C28563] mx-auto"></span>
       </div>
 
-      <div className="w-[100%] lg:w-[90%] md:w-[80%] mx-auto flex flex-col-reverse xl:flex-row ">
+      <div className="w-[100%] lg:w-[90%] md:w-[80%] mx-auto flex flex-col xl:flex-row ">
         {/* LEFT PART */}
         <div className="xl:w-1/2 w-full p-5">
           <PhotoSlider images={houseImages} />

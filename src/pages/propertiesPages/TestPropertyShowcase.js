@@ -6,7 +6,9 @@ import Preloader from "../../components/Preloader";
 import Hero from "../../components/propertyShowcase/Hero";
 import HouseDescription from "../../components/propertyShowcase/HouseDescription";
 import HousePlan from "../../components/propertyShowcase/HousePlan";
+import Advantages from "../../components/propertyShowcase/Advantages";
 import TopContactInfo from "../../components/TopContactInfo";
+import Meeting from "../../components/propertyShowcase/Meeting";
 
 function TestPropertyShowcase() {
     const [loading, setLoading] = useState(false);
@@ -26,8 +28,10 @@ function TestPropertyShowcase() {
             <TopContactInfo />
             <Navigation />
             <Hero />
+            <Advantages />
             <HousePlan />
             <HouseDescription />
+            <Meeting />
             <Footer />
           </>
         )}
