@@ -49,7 +49,7 @@ function createData(
 
 const rows = [
   createData("House A", 8, 2, 182.0, 4700.0, true, "/houses/house-a"),
-  createData("House B", 12, 2, 193.0, 6200.0, false),
+  createData("House B", 12, 2, 193.0, 6200.0, true),
   createData("House C", 9, 3, 215.0, 7200.0, true, "/houses/house-a"),
   createData("House D", 7, 1, 122.0, 6800.0, false),
   createData("House E", 10, 2, 181.0, 9300.0, true, "/houses/house-a"),

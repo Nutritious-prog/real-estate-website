@@ -47,3 +47,20 @@ code {
 ::-ms-input-placeholder { /* Microsoft Edge */
   color: black;
 }
+
+.dotted-ul, .arrowed-ul {
+  list-style: none; /* Remove default bullets */
+  list-style-position: inside;
+}
+
+.dotted-ul li::before, .arrowed-ul li::before  {
+  content: "\25A0";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+  color: #C28563; /* Change the color */
+  display: inline-block; /* Needed to add space between the bullet and the text */
+  width: 1em; /* Also needed for space (tweak if needed) */
+  margin-left: -1em; /* Also needed for space (tweak if needed) */
+}
+
+.arrowed-ul li::before {
+  content: "\FE65";
+}

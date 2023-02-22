@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import Advantages from "../components/Advantages";
 import Contact from "../components/Contact";
+import Footer from "../components/Footer";
 import Hero from "../components/Hero";
 import HousesTable from "../components/HousesTable";
 import Navigation from "../components/Navigation";
@@ -32,6 +33,7 @@ function MainPage() {
           <HousesTable />
           <Contact />
           <Testimonials />
+          <Footer />
         </>
       )}
     </>
