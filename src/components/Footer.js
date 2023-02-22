@@ -4,8 +4,7 @@ import { FaGreaterThan } from "react-icons/fa";
 import Zoom from "react-medium-image-zoom";
 import "react-medium-image-zoom/dist/styles.css";
 
-import logo from "../assets/logo-test-1-removebg.png";
-import house from "../assets/house-one.jpeg";
+import logo from "../assets/logo-white-letters-removebg-cropped.png";
 
 import './Footer.css';
 
@@ -15,7 +14,7 @@ function Footer() {
       <div className="w-[100%] lg:w-[90%] md:w-[80%] mx-auto flex flex-col">
         <div className="w-full flex mx-auto mt-10 flex-col xl:flex-row">
           {/* links */}
-          <div className="xl:w-1/3 w-full py-10 border-y-[1px] border-gray-600">
+          <div className="xl:w-1/3 w-full py-10 border-y-[1px] border-[#443F39]">
             <h2 className="font-bold text-3xl py-4 mt-2 text-white ml-4">
               USEFUL LINKS
             </h2>
@@ -87,7 +86,7 @@ function Footer() {
             </div>
           </div>
           {/* info */}
-          <div className="xl:w-1/3 w-full text-center flex flex-col py-10 bg-white">
+          <div className="xl:w-1/3 w-full text-center flex flex-col py-10 border-[1px] border-[#443F39] text-white">
             <div className="w-[120px] md:w-[155px] mx-auto py-2 flex align-middle">
               <img src={logo} alt="" />
             </div>
@@ -103,7 +102,7 @@ function Footer() {
             </div>
           </div>
           {/* gallery */}
-          <div className="xl:w-1/3 w-full py-10 border-y-[1px] border-gray-600">
+          <div className="xl:w-1/3 w-full py-10 border-y-[1px] border-[#443F39]">
             <h2 className="font-bold text-3xl py-4 mt-2 ml-4 text-white">
               GALERIA
             </h2>
