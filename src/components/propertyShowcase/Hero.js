@@ -1,5 +1,5 @@
 import React from 'react'
-import { FaGreaterThan, FaHome, FaShieldAlt } from "react-icons/fa";
+import { FaGreaterThan } from "react-icons/fa";
 
 import home_one from "../../assets/lux-home-one.jpeg";
 import home_two from "../../assets/lux-home-two.jpeg";

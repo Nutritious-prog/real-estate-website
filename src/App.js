@@ -2,6 +2,7 @@ import './App.css';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import MainPage from './pages/MainPage';
 import TestPropertyShowcase from './pages/propertiesPages/TestPropertyShowcase';
+import ContactPage from './pages/ContactPage';
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <Route index element={<MainPage/>}></Route>
       <Route path='/' element={<MainPage/>}></Route>
       <Route path='/home' element={<MainPage/>}></Route>
+      <Route path='/kontakt' element={<ContactPage/>}></Route>
       <Route path='/houses/house-a' element={<TestPropertyShowcase/>}></Route>
 
     </Routes>
