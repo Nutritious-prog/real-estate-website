@@ -46,7 +46,7 @@ function createData(
 ) {
   return { name, rooms, bathrooms, surface, price, avaliability, link };
 }
-
+ 
 const rows = [
   createData("House A", 8, 2, 182.0, 4700.0, true, "/houses/house-a"),
   createData("House B", 12, 2, 193.0, 6200.0, true),
