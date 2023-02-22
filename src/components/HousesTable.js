@@ -100,10 +100,10 @@ function HousesTable() {
                       {row.bathrooms}
                     </StyledTableCell>
                     <StyledTableCell align="center">
-                      {row.surface} &#13217;
+                      {row.surface} m<sup>2</sup>
                     </StyledTableCell>
                     <StyledTableCell align="center">
-                      {row.price} zł/&#13217;
+                      {row.price} zł/m<sup>2</sup>
                     </StyledTableCell>
                     <StyledTableCell align="center">
                       {row.avaliability ? (

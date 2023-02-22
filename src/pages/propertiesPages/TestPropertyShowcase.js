@@ -4,6 +4,7 @@ import Navigation from "../../components/Navigation";
 
 import Preloader from "../../components/Preloader";
 import Hero from "../../components/propertyShowcase/Hero";
+import HouseDescription from "../../components/propertyShowcase/HouseDescription";
 import HousePlan from "../../components/propertyShowcase/HousePlan";
 import TopContactInfo from "../../components/TopContactInfo";
 
@@ -26,6 +27,7 @@ function TestPropertyShowcase() {
             <Navigation />
             <Hero />
             <HousePlan />
+            <HouseDescription />
             <Footer />
           </>
         )}
