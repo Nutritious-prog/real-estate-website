@@ -3,7 +3,7 @@ import Typography from '@mui/material/Typography';
 import Breadcrumbs from '@mui/material/Breadcrumbs';
 import { Link } from 'react-router-dom';
 import HomeIcon from '@mui/icons-material/Home';
-import GroupIcon from '@mui/icons-material/Group';
+import LocalOfferIcon from '@mui/icons-material/LocalOffer';
 import NavigateNextIcon from '@mui/icons-material/NavigateNext';
 
 
@@ -28,8 +28,10 @@ function Breadcrumb() {
           sx={{ display: 'flex', alignItems: 'center' }}
           color="text.primary"
         >
-          <GroupIcon sx={{ mr: 0.5 }} fontSize="inherit" />
-          O Nas
+          <div className='flex items-center hover:underline hover:text-[#C28563]'>
+          <LocalOfferIcon sx={{ mr: 0.5 }} fontSize="inherit" />
+          Oferta
+          </div>
         </Typography>
       </Breadcrumbs>
     </div>
