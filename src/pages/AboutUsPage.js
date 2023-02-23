@@ -1,4 +1,5 @@
 import React from 'react'
+import ClientsCarousel from '../components/aboutUs/ClientsCarousel'
 import Description from '../components/aboutUs/Description'
 import Title from '../components/aboutUs/Title'
 import Footer from '../components/Footer'
@@ -12,6 +13,7 @@ function AboutUs() {
       <Navigation />
       <Title />
       <Description />
+      <ClientsCarousel />
       <Footer/>
     </div>
   )
