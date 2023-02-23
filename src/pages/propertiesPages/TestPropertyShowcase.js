@@ -9,6 +9,7 @@ import HousePlan from "../../components/propertyShowcase/HousePlan";
 import Advantages from "../../components/propertyShowcase/Advantages";
 import TopContactInfo from "../../components/TopContactInfo";
 import Meeting from "../../components/propertyShowcase/Meeting";
+import Breadcrumb from "../../components/propertyShowcase/Breadcrumb";
 
 function TestPropertyShowcase() {
     const [loading, setLoading] = useState(false);
@@ -27,6 +28,7 @@ function TestPropertyShowcase() {
           <>
             <TopContactInfo />
             <Navigation />
+            <Breadcrumb />
             <Hero />
             <Advantages />
             <HousePlan />

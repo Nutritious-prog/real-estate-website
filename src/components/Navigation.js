@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Link as ScrollLink } from "react-scroll";
+import { Link as OuterLink } from 'react-router-dom' 
 import { FaGreaterThan } from "react-icons/fa";
 
 import Aos from "aos";
@@ -29,10 +30,10 @@ function Navigation() {
         <div className="w-[50%] mr-[4%] my-auto montserrat-font text-sm">
           <ul className="hidden xl:flex justify-around py-4 list-none">
             <li className="hover:cursor-pointer hover-underline-animation font-normal group transition duration-300 hover:text-[#C28563]">
-              <ScrollLink to="aboutBiorezonans" smooth={true} duration={500}>
+              <OuterLink to="/">
                 HOME
                 <span className="block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-[#C28563]"></span>
-              </ScrollLink>
+              </OuterLink>
             </li>
             <li className="hover:cursor-pointer hover-underline-animation font-normal group transition duration-300 hover:text-[#C28563]">
               <ScrollLink to="aboutBiorezonans" smooth={true} duration={500}>
@@ -41,22 +42,22 @@ function Navigation() {
               </ScrollLink>
             </li>
             <li className="hover:cursor-pointer hover-underline-animation font-normal group transition duration-300 hover:text-[#C28563]">
-              <ScrollLink to="offer" smooth={true} duration={500}>
-                OFFER
+              <OuterLink to="/domy">
+                OFERTA
                 <span className="block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-[#C28563]"></span>
-              </ScrollLink>
+              </OuterLink>
             </li>
             <li className="hover:cursor-pointer hover-underline-animation font-normal group transition duration-300 hover:text-[#C28563]">
-              <ScrollLink to="apparatus" smooth={true} duration={500}>
-                APARTMENTS
+              <OuterLink to="/o-nas">
+                O NAS
                 <span className="block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-[#C28563]"></span>
-              </ScrollLink>
+              </OuterLink>
             </li>
             <li className="hover:cursor-pointer hover-underline-animation font-normal group transition duration-300 hover:text-[#C28563]">
-              <ScrollLink to="opinions" smooth={true} duration={500}>
-                CONTACT US
+              <OuterLink to="/kontakt">
+                KONTAKT
                 <span className="block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-[#C28563]"></span>
-              </ScrollLink>
+              </OuterLink>
             </li>
           </ul>
         </div>
@@ -119,24 +120,29 @@ function Navigation() {
         }
       >
         <li className="border-b-2 border-[#C28563] w-full p-4 hover:cursor-pointer hover-underline-animation">
-          <ScrollLink to="home" smooth={true} duration={500}>
+          <OuterLink to="/">
             HOME
-          </ScrollLink>
+          </OuterLink>
         </li>
         <li className="border-b-2 border-[#C28563] w-full p-4 hover:cursor-pointer hover-underline-animation">
           <ScrollLink to="offer" smooth={true} duration={500}>
-            OFFER
+            LOCALISATION
           </ScrollLink>
         </li>
         <li className="border-b-2 border-[#C28563] w-full p-4 hover:cursor-pointer hover-underline-animation">
-          <ScrollLink to="opinions" smooth={true} duration={500}>
-            APARTMENTS
-          </ScrollLink>
+          <OuterLink to="/domy">
+            OFERTA
+          </OuterLink>
         </li>
         <li className="border-b-2 border-[#C28563] w-full p-4 hover:cursor-pointer hover-underline-animation">
-          <ScrollLink to="forKids" smooth={true} duration={500}>
-            CONTACT US
-          </ScrollLink>
+          <OuterLink to="/o-nas">
+            O NAS
+          </OuterLink>
+        </li>
+        <li className="border-b-2 border-[#C28563] w-full p-4 hover:cursor-pointer hover-underline-animation">
+          <OuterLink to="/kontakt">
+            KONTAKT
+          </OuterLink>
         </li>
       </ul>
     </div>
