@@ -1,5 +1,5 @@
 import React from 'react'
-import Breadcrumb from '../components/aboutUs/Breadcrumb'
+import Description from '../components/aboutUs/Description'
 import Title from '../components/aboutUs/Title'
 import Footer from '../components/Footer'
 import Navigation from '../components/Navigation'
@@ -11,6 +11,7 @@ function AboutUs() {
       <TopContactInfo />
       <Navigation />
       <Title />
+      <Description />
       <Footer/>
     </div>
   )

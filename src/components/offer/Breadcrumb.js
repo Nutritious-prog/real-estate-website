@@ -28,7 +28,7 @@ function Breadcrumb() {
           sx={{ display: 'flex', alignItems: 'center' }}
           color="text.primary"
         >
-          <div className='flex items-center hover:underline hover:text-[#C28563]'>
+          <div className='flex items-center'>
           <LocalOfferIcon sx={{ mr: 0.5 }} fontSize="inherit" />
           Oferta
           </div>
