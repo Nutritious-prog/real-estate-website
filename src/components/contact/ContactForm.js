@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { send } from "emailjs-com";
+import Alert from "@mui/material/Alert";
 
 function ContactForm() {
   const [toSend, setToSend] = useState({
@@ -10,14 +11,21 @@ function ContactForm() {
     message: "",
   });
 
+  const [isSuccessVisible, setIsSuccessVisible] = useState(false);
+  const [isErrorVisible, setIsErrorVisible] = useState(false);
+
   const onSubmit = (e) => {
     e.preventDefault();
     send("service_492o64a", "template_dhbtg9c", toSend, "J07gu0P6KsaZL9Fdu")
       .then((response) => {
         console.log("SUCCESS!", response.status, response.text);
+        setIsSuccessVisible(true);
+
       })
       .catch((err) => {
         console.log("FAILED...", err);
+        setIsErrorVisible(true);
+
       });
   };
 
@@ -89,6 +97,24 @@ function ContactForm() {
             </button>
           </div>
         </form>
+        <div className="relative mb-5">
+              <Alert
+                severity="success"
+                className={
+                  isSuccessVisible ? "absolute top-0 left-0 w-full" : "invisible"
+                }
+              >
+                Dziękujemy za wysłanie wiadomości!
+              </Alert>
+              <Alert
+                severity="warning"
+                className={
+                  isErrorVisible ? "absolute top-0 left-0 w-full" : "invisible"
+                }
+              >
+                Coś poszło nie tak podczas wysyłania wiadomości...
+              </Alert>
+            </div>
       </div>
     </div>
   );

@@ -1,7 +1,9 @@
 import React, { useState } from "react";
 import { send } from "emailjs-com";
+import Alert from "@mui/material/Alert";
 
 import "./Contact.css";
+import "./Advantages.css";
 
 function Contact() {
   const [toSend, setToSend] = useState({
@@ -12,14 +14,19 @@ function Contact() {
     message: "",
   });
 
+  const [isSuccessVisible, setIsSuccessVisible] = useState(false);
+  const [isErrorVisible, setIsErrorVisible] = useState(false);
+
   const onSubmit = (e) => {
     e.preventDefault();
     send("service_492o64a", "template_dhbtg9c", toSend, "J07gu0P6KsaZL9Fdu")
       .then((response) => {
-        console.log("SUCCESS!", response.status, response.text);
+        console.log("SUCCESS!", response.status, response.text)
+          setIsSuccessVisible(true);
       })
       .catch((err) => {
-        console.log("FAILED...", err);
+        console.log("FAILED...", err)
+          setIsErrorVisible(true);
       });
   };
 
@@ -86,10 +93,30 @@ function Contact() {
                   type="submit"
                   className="flex w-fit mt-4 bg-[#19130B] text-white tracking-widest p-3 ease-in duration-500 hover:bg-[#19130B]"
                 >
-                  <p className="p-2 font-bold tracking-widest">WYŚLIJ WIADOMOŚĆ</p>
+                  <p className="p-2 font-bold tracking-widest">
+                    WYŚLIJ WIADOMOŚĆ
+                  </p>
                 </button>
               </div>
             </form>
+            <div className="relative mb-5">
+              <Alert
+                severity="success"
+                className={
+                  isSuccessVisible ? "absolute top-0 left-0 w-full" : "invisible"
+                }
+              >
+                Dziękujemy za wysłanie wiadomości!
+              </Alert>
+              <Alert
+                severity="warning"
+                className={
+                  isErrorVisible ? "absolute top-0 left-0 w-full" : "invisible"
+                }
+              >
+                Coś poszło nie tak podczas wysyłania wiadomości...
+              </Alert>
+            </div>
           </div>
         </div>
       </div>

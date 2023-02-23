@@ -3,7 +3,7 @@ import Typography from '@mui/material/Typography';
 import Breadcrumbs from '@mui/material/Breadcrumbs';
 import { Link } from 'react-router-dom';
 import HomeIcon from '@mui/icons-material/Home';
-import LocalPhoneIcon from '@mui/icons-material/LocalPhone';
+import GroupIcon from '@mui/icons-material/Group';
 import NavigateNextIcon from '@mui/icons-material/NavigateNext';
 
 
@@ -15,7 +15,7 @@ function handleClick(event) {
 function Breadcrumb() {
   return (
     <div className='w-full flex'>
-            <div className='w-[90%] mx-auto p-5' role="presentation" onClick={handleClick}>
+            <div className='w- full p-5' role="presentation" onClick={handleClick}>
       <Breadcrumbs aria-label="breadcrumb" separator={<NavigateNextIcon fontSize="small" />}>
         <Link to="/"
         >
@@ -28,8 +28,8 @@ function Breadcrumb() {
           sx={{ display: 'flex', alignItems: 'center' }}
           color="text.primary"
         >
-          <LocalPhoneIcon sx={{ mr: 0.5 }} fontSize="inherit" />
-          Kontakt
+          <GroupIcon sx={{ mr: 0.5 }} fontSize="inherit" />
+          O Nas
         </Typography>
       </Breadcrumbs>
     </div>
