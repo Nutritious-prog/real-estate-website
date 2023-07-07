@@ -1,6 +1,6 @@
-import React, { useState } from "react";
-import { send } from "emailjs-com";
 import Alert from "@mui/material/Alert";
+import { send } from "emailjs-com";
+import React, { useState } from "react";
 
 function ContactForm() {
   const [toSend, setToSend] = useState({
@@ -20,12 +20,10 @@ function ContactForm() {
       .then((response) => {
         console.log("SUCCESS!", response.status, response.text);
         setIsSuccessVisible(true);
-
       })
       .catch((err) => {
         console.log("FAILED...", err);
         setIsErrorVisible(true);
-
       });
   };
 
@@ -36,14 +34,18 @@ function ContactForm() {
     <div className="w-full xl:w-[60%] h-full">
       <div className="w-[80%] mx-auto my-auto tracking-widest">
         <p className="text-[#C28563] text-lg montserrat-font pt-4">
-          QUOTE FROM
+          FORMULARZ KONTAKTOWY
         </p>
-        <h1 className="font-bold text-5xl py-2 text-black">REQUEST A VISIT</h1>
+        <h1 className="font-bold text-5xl py-2 text-black">
+          UMÓW SIĘ NA SPOTKANIE!
+        </h1>
         <p className="text-black py-2 text-lg">
-          Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-          accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae
-          ab illo inventore veritatis et quasi architecto beatae vitae dicta
-          sunt explicabo.
+          Zachęcamy do skontaktowania się z nami i osobiście zobaczenia naszych
+          nieruchomości na własne oczy. Nie ma nic bardziej satysfakcjonującego
+          niż odkrycie magicznego uczucia, jakie można poczuć, stając w swoim
+          potencjalnym nowym domu. Pozwól nam przewodniczyć Ci przez wyjątkowe
+          przestrzenie, w których możesz zbudować swoje marzenia i cieszyć się
+          komfortem każdego dnia.
         </p>
         <form
           onSubmit={onSubmit}
@@ -54,7 +56,7 @@ function ContactForm() {
               className="lg:w-[48%] w-full mr-1 my-2 text-black"
               type="text"
               name="from_name"
-              placeholder="YOUR NAME"
+              placeholder="TWOJE IMIĘ"
               value={toSend.from_name}
               onChange={handleChange}
             />
@@ -62,7 +64,7 @@ function ContactForm() {
               className="lg:w-[48%] w-full ml-auto"
               type="text"
               name="phone_number"
-              placeholder="PHONE NUMBER"
+              placeholder="NUMER TELEFONU"
               value={toSend.phone_number}
               onChange={handleChange}
             />
@@ -70,21 +72,21 @@ function ContactForm() {
           <input
             type="text"
             name="email_address"
-            placeholder="EMAIL ADDRESS"
+            placeholder="ADRES EMAIL"
             value={toSend.email_address}
             onChange={handleChange}
           />
           <input
             type="text"
             name="subject"
-            placeholder="SUBJECT"
+            placeholder="TEMAT"
             value={toSend.subject}
             onChange={handleChange}
           />
           <input
             type="text"
             name="message"
-            placeholder="WRITE YOUR MESSAGE"
+            placeholder="NAPISZ SWOJĄ WIADOMOŚĆ"
             value={toSend.message}
             onChange={handleChange}
           />
@@ -98,23 +100,23 @@ function ContactForm() {
           </div>
         </form>
         <div className="relative mb-5">
-              <Alert
-                severity="success"
-                className={
-                  isSuccessVisible ? "absolute top-0 left-0 w-full" : "invisible"
-                }
-              >
-                Dziękujemy za wysłanie wiadomości!
-              </Alert>
-              <Alert
-                severity="warning"
-                className={
-                  isErrorVisible ? "absolute top-0 left-0 w-full" : "invisible"
-                }
-              >
-                Coś poszło nie tak podczas wysyłania wiadomości...
-              </Alert>
-            </div>
+          <Alert
+            severity="success"
+            className={
+              isSuccessVisible ? "absolute top-0 left-0 w-full" : "invisible"
+            }
+          >
+            Dziękujemy za wysłanie wiadomości!
+          </Alert>
+          <Alert
+            severity="warning"
+            className={
+              isErrorVisible ? "absolute top-0 left-0 w-full" : "invisible"
+            }
+          >
+            Coś poszło nie tak podczas wysyłania wiadomości...
+          </Alert>
+        </div>
       </div>
     </div>
   );

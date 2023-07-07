@@ -13,7 +13,7 @@ function handleClick(event) {
     console.info('You clicked a breadcrumb.');
   }
 
-function Breadcrumb() {
+function Breadcrumb(props) {
   return (
     <div className='w-full flex'>
             <div className='w-[90%] mx-auto p-5' role="presentation" onClick={handleClick}>
@@ -37,7 +37,7 @@ function Breadcrumb() {
           color="text.primary"
         >
           <GiteIcon sx={{ mr: 0.5 }} fontSize="inherit" />
-          Dom A
+          {props.houseName}
         </Typography>
       </Breadcrumbs>
     </div>

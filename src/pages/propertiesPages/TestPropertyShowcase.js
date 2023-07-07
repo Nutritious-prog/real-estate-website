@@ -28,11 +28,11 @@ function TestPropertyShowcase() {
           <>
             <TopContactInfo />
             <Navigation />
-            <Breadcrumb />
+            <Breadcrumb houseName="Domek A"/>
             <Hero />
             <Advantages />
             <HousePlan />
-            <HouseDescription />
+            <HouseDescription houseName="domu A" roomsNumber='5' homeSurface='128' lotSurface='320'/>
             <Meeting />
             <Footer />
           </>

@@ -1,5 +1,6 @@
 import React from "react";
 import { FaGreaterThan, FaHome, FaShieldAlt } from "react-icons/fa";
+import { Link as ScrollLink } from "react-scroll";
 
 import home_one from "../assets/lux-home-one.jpeg";
 import home_two from "../assets/lux-home-two.jpeg";
@@ -20,15 +21,16 @@ function Welcome() {
         {/* right */}
         <div className="xl:w-1/2 p-3 w-full tracking-widest">
           <p className="text-[#C28563] py-2 text-lg montserrat-font">
-            WELCOME TO PROPATY
+            WITAMY W ZWIERZYNIECKA PARK!
           </p>
           <h1 className="font-bold text-5xl py-4">
-            BEST DEAL WITH OUR PROPATY
+            Oferta, która przechodzi wszelkie wyobrażenia!
           </h1>
           <p className="tracking-normal text-xl py-3">
-            There are many variations of passages of Lorem Ipsum available, but
-            the majority have suffered alteration in some form, by injected
-            humour, or randomised words which don't look.
+            Zapraszamy do odkrycia naszej ekskluzywnej oferty domków
+            jednorodzinnych, stworzonej z myślą o Twoim komforcie i zadowoleniu.
+            Nasze nowoczesne domy, o unikalnym designie i wysokiej jakości
+            wykończeniach, zapewnią Ci idealne miejsce do życia.
           </p>
 
           <div className="flex w-full justify-between py-5 border-b-[1px] border-slate-200 xl:flex-row flex-col">
@@ -36,31 +38,33 @@ function Welcome() {
               <p className="pr-4 text-[#C28563] text-5xl">
                 <FaHome />
               </p>
-              <p className="text-lg">ATRACTIVE DESIGN LOCATION</p>
+              <p className="text-lg">ATRAKCYJNY DESIGN</p>
             </div>
             <div className="flex xl:mt-0 mt-5">
               <p className="pr-4 text-[#C28563] text-5xl">
                 <FaShieldAlt />
               </p>
-              <p className="text-lg">ECO WINDOW CONSTRUCTION</p>
+              <p className="text-lg">BEZPIECZEŃSTWO I EKOLOGIA</p>
             </div>
           </div>
 
           <h2 className="text-[#C28563] py-4 text-lg mt-3 montserrat-font">
-            ROYAL TOUCH PAINT SPRING SECQURITY
+            SPOKÓJ I BEZPIECZEŃSTWO
           </h2>
           <p className="tracking-normal text-xl">
-            There are many variations of passages of Lorem Ipsum available, but
-            the majority have suffered alteration
+            Niezawodność naszego dewelopera gwarantuje, że zyskasz nie tylko
+            piękny dom, ale także spokój i pewność inwestycji. Przyjdź i odkryj
+            swoje wymarzone miejsce do życia w naszych domach jednorodzinnych
+            już dziś!
           </p>
-
-
-          <button className="flex mt-4 bg-[#C28563] text-white tracking-widest p-3 ease-in duration-500 hover:bg-[#19130B]">
-            <p className="p-2 font-bold">MORE INFO</p>
-            <p className="p-3 font-thin">
-              <FaGreaterThan />
-            </p>
-          </button>
+          <ScrollLink to="contact" smooth={true} duration={500} offset={-200}>
+            <button className="flex mt-4 bg-[#C28563] text-white tracking-widest p-3 ease-in duration-500 hover:bg-[#19130B]">
+              <p className="p-2 font-bold">KONTAKT</p>
+              <p className="p-3 font-thin">
+                <FaGreaterThan />
+              </p>
+            </button>
+          </ScrollLink>
         </div>
       </div>
     </div>

@@ -6,7 +6,7 @@ import "react-medium-image-zoom/dist/styles.css";
 
 import logo from "../assets/logo-white-letters-removebg-cropped.png";
 
-import './Footer.css';
+import "./Footer.css";
 
 function Footer() {
   return (
@@ -16,7 +16,7 @@ function Footer() {
           {/* links */}
           <div className="xl:w-1/3 w-full py-10 border-y-[1px] border-[#443F39]">
             <h2 className="font-bold text-3xl py-4 mt-2 text-white ml-4">
-              USEFUL LINKS
+              PRZYDATNE LINKI
             </h2>
             <div className="flex text-white text-xl ml-4">
               <ul className="pr-10 font-bold">
@@ -24,7 +24,7 @@ function Footer() {
                   <p className="text-xs p-2 text-[#C28563]">
                     <FaGreaterThan />
                   </p>
-                  About us
+                  O nas
                 </li>
                 <li className="py-2 flex">
                   <p className="text-xs p-2 text-[#C28563]">
@@ -36,19 +36,19 @@ function Footer() {
                   <p className="text-xs p-2 text-[#C28563]">
                     <FaGreaterThan />
                   </p>
-                  Our Activity
+                  Nasze inwestycje
                 </li>
                 <li className="py-2 flex">
                   <p className="text-xs p-2 text-[#C28563]">
                     <FaGreaterThan />
                   </p>
-                  Partners
+                  Partnerzy
                 </li>
                 <li className="py-2 flex">
                   <p className="text-xs p-2 text-[#C28563]">
                     <FaGreaterThan />
                   </p>
-                  Combined
+                  Podsumowanie
                 </li>
               </ul>
               <ul className="pr-10 font-bold">
@@ -56,31 +56,31 @@ function Footer() {
                   <p className="text-xs p-2 text-[#C28563]">
                     <FaGreaterThan />
                   </p>
-                  Property List
+                  Lista Nieruchomości
                 </li>
                 <li className="py-2 flex">
                   <p className="text-xs p-2 text-[#C28563]">
                     <FaGreaterThan />
                   </p>
-                  Creative
+                  Sekcja Kreatywna
                 </li>
                 <li className="py-2 flex">
                   <p className="text-xs p-2 text-[#C28563]">
                     <FaGreaterThan />
                   </p>
-                  Cotact us
+                  Kontakt
                 </li>
                 <li className="py-2 flex">
                   <p className="text-xs p-2 text-[#C28563]">
                     <FaGreaterThan />
                   </p>
-                  Botanique
+                  Botanika
                 </li>
                 <li className="py-2 flex">
                   <p className="text-xs p-2 text-[#C28563]">
                     <FaGreaterThan />
                   </p>
-                  Spaces
+                  Przestrzenie
                 </li>
               </ul>
             </div>
@@ -92,13 +92,19 @@ function Footer() {
             </div>
             <div>
               <h2 className="text-xl py-2 font-bold">LOKALIZACJA</h2>
-              <p className="text-lg">Themeforest, Envato HQ 24 Fifth st.,</p>
-              <p className="text-lg">Los Angeles, USA</p>
+              <p className="text-lg">Zwierzyniecka 5 i 9</p>
+              <p className="text-lg">Skierniewice, Polska</p>
             </div>
             <div className="mt-4">
               <h2 className="text-xl py-2 font-bold">KONTAKT</h2>
-              <p className="text-lg">+48 123 456 789</p>
-              <p className="text-lg">jan.kowalski@gmail.com</p>
+              <p className="text-lg">
+                <a href="tel:507800077">+48 507 800 077</a>
+              </p>
+              <p className="text-lg">
+                <a href="mailto:biuro@zwierzynieckapark.com.pl">
+                  biuro@zwierzynieckapark.com.pl
+                </a>
+              </p>
             </div>
           </div>
           {/* gallery */}

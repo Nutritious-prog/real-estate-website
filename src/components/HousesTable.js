@@ -47,29 +47,43 @@ function createData(
 }
 
 const rows = [
-  createData("House A", 8, 2, 182.0, 4700.0, true, "/domy/dom-a"),
-  createData("House B", 12, 2, 193.0, 6200.0, false),
-  createData("House C", 9, 3, 215.0, 7200.0, true, "/domy/dom-a"),
-  createData("House D", 7, 1, 122.0, 6800.0, false),
-  createData("House E", 10, 2, 181.0, 9300.0, true, "/domy/dom-a"),
-  createData("House A", 8, 2, 182.0, 4700.0, true, "/domy/dom-a"),
-  createData("House B", 12, 2, 193.0, 6200.0, false),
-  createData("House C", 9, 3, 215.0, 7200.0, true, "/domy/dom-a"),
-  createData("House D", 7, 1, 122.0, 6800.0, false),
-  createData("House E", 10, 2, 181.0, 9300.0, true, "/domy/dom-a"),
+  createData("Zwierzyniecka 5B", 12, 2, 193.0, 6200.0, true, "/domy/dom-b"),
+  createData("Zwierzyniecka 5C", 9, 3, 215.0, 7200.0, true, "/domy/dom-c"),
+  createData("Zwierzyniecka 5D", 7, 1, 122.0, 6800.0, true, "/domy/dom-d"),
+  createData("Zwierzyniecka 5E", 10, 2, 181.0, 9300.0, true, "/domy/dom-e"),
+  createData("Zwierzyniecka 9A", 8, 2, 182.0, 4700.0, false),
+  createData("Zwierzyniecka 9B", 12, 2, 193.0, 6200.0, false),
+  createData("Zwierzyniecka 9C", 9, 3, 215.0, 7200.0, false),
+  createData("Zwierzyniecka 9D", 7, 1, 122.0, 6800.0, false),
+  createData("Zwierzyniecka 9E", 10, 2, 181.0, 9300.0, false),
+  createData("Zwierzyniecka 9F", 8, 2, 182.0, 4700.0, false),
+  createData("Zwierzyniecka 9G", 12, 2, 193.0, 6200.0, false),
+  createData("Zwierzyniecka 9H", 9, 3, 215.0, 7200.0, false),
+  createData("Zwierzyniecka 9I", 7, 1, 122.0, 6800.0, false),
+  createData("Zwierzyniecka 9J", 10, 2, 181.0, 9300.0, false),
+  createData("Zwierzyniecka 9K", 8, 2, 182.0, 4700.0, false),
+  createData("Zwierzyniecka 9L", 12, 2, 193.0, 6200.0, false),
+  createData("Zwierzyniecka 9M", 9, 3, 215.0, 7200.0, false),
+  createData("Zwierzyniecka 9N", 7, 1, 122.0, 6800.0, false),
+  createData("Zwierzyniecka 9O", 10, 2, 181.0, 9300.0, false),
+  createData("Zwierzyniecka 9P", 8, 2, 182.0, 4700.0, false),
+  createData("Zwierzyniecka 9R", 12, 2, 193.0, 6200.0, true, "/domy/dom-r"),
+  createData("Zwierzyniecka 9S", 9, 3, 215.0, 7200.0, false),
+  createData("Zwierzyniecka 9T", 7, 1, 122.0, 6800.0, true, "/domy/dom-t"),
+  createData("Zwierzyniecka 9U", 10, 2, 181.0, 9300.0, false),
 ];
 
 function HousesTable() {
   return (
-    <div className="w-full flex bg-white pb-10">
+    <div name="houses" className="w-full flex bg-white pb-10">
       <div className="w-[100%] lg:w-[90%] md:w-[80%] mx-auto flex flex-col">
         {/* UP PART */}
         <div className="xl:w-[50%] w-[90%] text-center mx-auto flex flex-col py-14">
           <p className="text-[#C28563] py-2 text-lg montserrat-font">
-            ABOUT AVAILABILITY
+            DOSTĘPNOŚĆ NIERUCHOMOŚCI
           </p>
-          <h2 className="font-bold text-5xl py-4 text-black">
-            MOVE IN READY HOMES EXTREM TOWER
+          <h2 className="font-bold xl:text-5xl py-4 text-black">
+            LISTA DOSTĘPNYCH ORAZ SPRZEDANYCH NIERUCHOMOŚCI
           </h2>
         </div>
         {/* DOWN PART */}
@@ -86,14 +100,14 @@ function HousesTable() {
             >
               <TableHead className="bg-[#C28563]">
                 <TableRow>
-                  <StyledTableCell>RESIDENCE</StyledTableCell>
-                  <StyledTableCell align="center">ROOMS</StyledTableCell>
-                  <StyledTableCell align="center">BATHROOMS</StyledTableCell>
-                  <StyledTableCell align="center">SURFACE</StyledTableCell>
+                  <StyledTableCell>DOM</StyledTableCell>
+                  <StyledTableCell align="center">POKOJE</StyledTableCell>
+                  <StyledTableCell align="center">ŁAZIENKI</StyledTableCell>
+                  <StyledTableCell align="center">POWIERZCHNIA</StyledTableCell>
                   <StyledTableCell align="center">
-                    SQ. MET. PRICE
+                    CENA ZA M<sup>2</sup>
                   </StyledTableCell>
-                  <StyledTableCell align="center">AVAILABLE</StyledTableCell>
+                  <StyledTableCell align="center">DOSTĘPNOŚĆ</StyledTableCell>
                 </TableRow>
               </TableHead>
               <TableBody>
