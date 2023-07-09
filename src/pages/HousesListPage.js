@@ -11,10 +11,7 @@ function HousesListPage() {
   const [loading, setLoading] = useState(false);
 
   useEffect(() => {
-    setLoading(true);
-    setTimeout(() => {
-      setLoading(false);
-    }, 1500);
+    window.scrollTo(0, 0)
   }, []);
   return (
     <>
