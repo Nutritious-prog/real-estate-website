@@ -3,8 +3,8 @@ import { FaGreaterThan } from "react-icons/fa";
 import { Link as ScrollLink } from "react-scroll";
 import { Link as OuterLink } from "react-router-dom";
 
-import home_one from "../../assets/lux-home-one.jpeg";
-import home_two from "../../assets/lux-home-two.jpeg";
+import home_one from "../../assets/bedroom_vis.png";
+import home_two from "../../assets/liv_room_vis.png";
 
 import "./Hero.css";
 function Hero() {
@@ -22,7 +22,7 @@ function Hero() {
           <div className="flex w-full xl:w-[60%] justify-evenly xl:p-5 mx-auto">
             <ScrollLink to="info" smooth={true} duration={500} offset={-70}>
               <button className="flex bg-[#C28563] text-white tracking-widest xl:p-3 p-1 ease-in duration-500 hover:bg-[#19130B] mr-1">
-                <p className="p-2">CZYTAJ DALEJ</p>
+                <p className="p-2">DALEJ</p>
                 <p className="p-3 font-thin">
                   <FaGreaterThan />
                 </p>
@@ -39,11 +39,11 @@ function Hero() {
           </div>
         </div>
         {/* right */}
-        <div className="xl:w-[45%] w-full p-3 relative ml-auto">
+        <div className="xl:w-[45%] w-[95%] p-5 xl:mr-5 relative">
           <div className="xl:w-[90%] w-[75%] h-auto">
             <img className="w-full h-auto" src={home_two} alt="" />
           </div>
-          <div className="absolute xl:bottom-10 bottom-0 right-0 w-[65%] h-auto">
+          <div className="absolute xl:bottom-10 bottom-0 right-0 w-[55%] h-auto">
             <img className="w-full h-auto" src={home_one} alt="" />
           </div>
         </div>

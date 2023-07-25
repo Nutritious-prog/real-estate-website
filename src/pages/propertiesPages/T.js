@@ -4,8 +4,8 @@ import Navigation from "../../components/Navigation";
 
 import Preloader from "../../components/Preloader";
 import Hero from "../../components/propertyShowcase/Hero";
-import HouseDescription from "../../components/propertyShowcase/HouseDescription";
-import HousePlan from "../../components/propertyShowcase/HousePlan";
+import HouseDescriptionRightInn from "../../components/propertyShowcase/HouseDescriptionRightInn";
+import HousePlanRightInn from "../../components/propertyShowcase/HousePlanRightInn";
 import Advantages from "../../components/propertyShowcase/Advantages";
 import TopContactInfo from "../../components/TopContactInfo";
 import Meeting from "../../components/propertyShowcase/Meeting";
@@ -31,8 +31,8 @@ function T() {
           <Breadcrumb houseName="Dom T" />
           <Hero />
           <Advantages />
-          <HousePlan houseLetter='T'/>
-          <HouseDescription
+          <HousePlanRightInn houseLetter='T'/>
+          <HouseDescriptionRightInn
             houseName="domu T"
             roomsNumber="5"
             homeSurface="128"

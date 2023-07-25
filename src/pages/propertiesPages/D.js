@@ -4,12 +4,12 @@ import Navigation from "../../components/Navigation";
 
 import Preloader from "../../components/Preloader";
 import Hero from "../../components/propertyShowcase/Hero";
-import HouseDescription from "../../components/propertyShowcase/HouseDescription";
-import HousePlan from "../../components/propertyShowcase/HousePlan";
+import HouseDescriptionLeftInn from "../../components/propertyShowcase/HouseDescriptionLeftInn";
 import Advantages from "../../components/propertyShowcase/Advantages";
 import TopContactInfo from "../../components/TopContactInfo";
 import Meeting from "../../components/propertyShowcase/Meeting";
 import Breadcrumb from "../../components/propertyShowcase/Breadcrumb";
+import HousePlanLeftInn from "../../components/propertyShowcase/HousePlanLeftInn";
 
 function D() {
   const [loading, setLoading] = useState(false);
@@ -31,8 +31,8 @@ function D() {
           <Breadcrumb houseName="Dom D" />
           <Hero />
           <Advantages />
-          <HousePlan houseLetter='D'/>
-          <HouseDescription
+          <HousePlanLeftInn houseLetter='D'/>
+          <HouseDescriptionLeftInn
             houseName="domu D"
             roomsNumber="5"
             homeSurface="128"

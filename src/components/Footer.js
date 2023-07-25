@@ -145,7 +145,7 @@ function Footer() {
                   <div
                     aria-label="That Wanaka Tree, New Zealand by Laura Smetsers"
                     role="img"
-                    className="tile-background h-[215px] w-[215px] -m-10"
+                    className="tile-background-four h-[215px] w-[215px] -m-10"
                   ></div>
                 </Zoom>
               </div>
@@ -154,7 +154,7 @@ function Footer() {
                   <div
                     aria-label="That Wanaka Tree, New Zealand by Laura Smetsers"
                     role="img"
-                    className="tile-background-two h-[215px] w-[215px] -m-10"
+                    className="tile-background-five h-[215px] w-[215px] -m-10"
                   ></div>
                 </Zoom>
               </div>
@@ -163,7 +163,7 @@ function Footer() {
                   <div
                     aria-label="That Wanaka Tree, New Zealand by Laura Smetsers"
                     role="img"
-                    className="tile-background-three h-[215px] w-[215px] -m-10"
+                    className="tile-background-six h-[215px] w-[215px] -m-10"
                   ></div>
                 </Zoom>
               </div>

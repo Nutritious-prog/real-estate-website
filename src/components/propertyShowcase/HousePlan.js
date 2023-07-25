@@ -1,6 +1,6 @@
 import React from "react";
 
-import plan from "../../assets/house-plan.jpeg";
+import plan from "../../assets/plans/Dół_Lewy_Zew.png";
 
 import Zoom from "react-medium-image-zoom";
 import "react-medium-image-zoom/dist/styles.css";
@@ -24,11 +24,11 @@ function HousePlan(props) {
 
       <div className="w-[100%] lg:w-[90%] md:w-[80%] mx-auto flex flex-col xl:flex-row ">
         {/* LEFT PART */}
-        <div className="xl:w-1/2 w-full p-5">
+        <div className="xl:w-1/2 w-full p-10">
           <PhotoSlider images={houseImages} />
         </div>
         {/* RIGHT PART */}
-        <div className="xl:w-1/2 w-full p-5">
+        <div className="xl:w-1/2 w-full">
           <Zoom>
             <img src={plan} alt="" />
             {/* <img src={require(`../assets/${props.fileName.toLowerCase()}`)} alt=''/> */}

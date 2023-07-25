@@ -34,9 +34,9 @@ function B() {
           <HousePlan houseLetter='B'/>
           <HouseDescription
             houseName="domu B"
-            roomsNumber="5"
-            homeSurface="128"
-            lotSurface="320"
+            roomsNumber="4"
+            homeSurface="103.40"
+            lotSurface="154"
           />
           <Meeting />
           <Footer />

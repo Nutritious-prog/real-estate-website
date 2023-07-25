@@ -2,8 +2,8 @@ import React from "react";
 import { FaGreaterThan, FaHome, FaShieldAlt } from "react-icons/fa";
 import { Link as ScrollLink } from "react-scroll";
 
-import home_one from "../assets/lux-home-one.jpeg";
-import home_two from "../assets/lux-home-two.jpeg";
+import home_one from "../assets/bedroom_vis.png";
+import home_two from "../assets/liv_room_vis.png";
 
 function Welcome() {
   return (
@@ -14,7 +14,7 @@ function Welcome() {
           <div className="xl:w-[90%] w-[75%] h-auto">
             <img className="w-full h-auto" src={home_two} alt="" />
           </div>
-          <div className="absolute xl:bottom-10 bottom-0 right-0 w-[65%] h-auto">
+          <div className="absolute xl:bottom-10 bottom-0 right-0 w-[55%] h-auto">
             <img className="w-full h-auto" src={home_one} alt="" />
           </div>
         </div>
