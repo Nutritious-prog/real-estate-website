@@ -16,7 +16,7 @@ function ContactForm() {
 
   const onSubmit = (e) => {
     e.preventDefault();
-    send("service_492o64a", "template_dhbtg9c", toSend, "J07gu0P6KsaZL9Fdu")
+    send("service_gz3oegp", "template_dhbtg9c", toSend, "J07gu0P6KsaZL9Fdu")
       .then((response) => {
         console.log("SUCCESS!", response.status, response.text);
         setIsSuccessVisible(true);

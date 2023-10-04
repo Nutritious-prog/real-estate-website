@@ -18,7 +18,7 @@ function TopContactInfo() {
             <FaEnvelope />
           </p>
           <p className="p-2 font-bold">
-            <a href="mailto:test@zwierzynieckapark.com.pl">
+            <a href="mailto:mgtartanus@gmail.com">
               biuro@zwierzynieckapark.com.pl
             </a>
           </p>
