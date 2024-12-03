@@ -42,7 +42,7 @@ function ContactInfo() {
               </p>
               <p className="xl:text-lg text-md font-bold text-white">
                 <a href="mailto:biuro@zwierzynieckapark.com.pl">
-                  biuro@zwierzynieckapark.com.pl
+                  biuro@zwierzynieckapark.pl
                 </a>
               </p>
             </div>

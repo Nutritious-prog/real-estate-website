@@ -3,7 +3,7 @@ import React from "react";
 import Zoom from "react-medium-image-zoom";
 import "react-medium-image-zoom/dist/styles.css";
 
-import plan from "../../assets/plans/Góra_Lewy_Wew.png";
+import plan from "../../assets/plans/Gora_Lewy_Wew.png";
 import pdf_dol from "../../assets/pdfs/Dół_Lewy_Wew_Tech.pdf"
 import pdf_gora from "../../assets/pdfs/Dół_Lewy_Wew_Tech.pdf"
 import { FaGreaterThan } from "react-icons/fa";

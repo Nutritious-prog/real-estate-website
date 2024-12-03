@@ -3,9 +3,9 @@ import React from "react";
 import Zoom from "react-medium-image-zoom";
 import "react-medium-image-zoom/dist/styles.css";
 
-import plan from "../../assets/plans/Góra_Lewy_Zew.png";
+import plan from "../../assets/plans/Gora_Lewy_Zew.png";
 import pdf_dol from "../../assets/pdfs/Dół_Lewy_Zew_Tech.pdf"
-import pdf_gora from "../../assets/pdfs/Góra_Lewy_Zew_Tech.pdf"
+import pdf_gora from "../../assets/pdfs/Gora_Lewy_Zew_Tech.pdf"
 import { FaGreaterThan } from "react-icons/fa";
 
 import { Link as OuterLink } from "react-router-dom";
