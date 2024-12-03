@@ -1,0 +1,71 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=Maven+Pro:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=Montserrat:wght@100;300;400;500;700;900&display=swap');
+
+body {
+  margin: 0;
+  font-family: 'Cormorant Garamond',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+::selection {
+  background: #C28563;
+  color: white;
+}
+
+::-webkit-scrollbar-track {
+  background: #C28563;
+  color: #C28563;;
+}
+
+.montserrat-font {
+  font-family: 'Montserrat',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: black;
+  opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: black;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+  color: black;
+}
+
+.dotted-ul, .arrowed-ul {
+  list-style: none; /* Remove default bullets */
+  list-style-position: inside;
+}
+
+.dotted-ul li::before, .arrowed-ul li::before  {
+  content: "\25A0";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+  color: #C28563; /* Change the color */
+  display: inline-block; /* Needed to add space between the bullet and the text */
+  width: 1em; /* Also needed for space (tweak if needed) */
+  margin-left: -1em; /* Also needed for space (tweak if needed) */
+}
+
+.arrowed-ul li::before {
+  content: "\FE65";
+}
+
+.gallery-image {
+  height: 100%;
+  width: auto;
+}

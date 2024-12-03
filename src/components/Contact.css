@@ -1,0 +1,36 @@
+.contact-bg {
+  background-image: url(../assets/lux-home-inter.jpeg);
+  background-position: center;
+  background-attachment: fixed;
+}
+
+input[type="text"]:focus {
+  outline: none;
+  border-bottom: 3px solid #19130B;
+  border-right: 3px solid #19130B;
+}
+input {
+  padding: 1.25rem;
+  margin: 0.5rem 0;
+  border-bottom: 3px solid white;
+  border-right: 3px solid white;
+  font-family: "Montserrat", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  letter-spacing: 0.1rem;
+  transition: all 0.3s;
+}
+input::-webkit-input-placeholder {
+  color: #19130B;
+  font-family: "Montserrat", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  letter-spacing: 0.1rem;
+}
+input:-moz-placeholder {
+  color: #19130B;
+  font-family: "Montserrat", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  letter-spacing: 0.1rem;
+}

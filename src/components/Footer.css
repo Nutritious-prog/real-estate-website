@@ -1,0 +1,30 @@
+.tile-background {
+    background-image: url("../assets/bathroom_vis.png");
+    background-size: cover;    
+    background-position: center;
+}
+.tile-background-two {
+    background-image: url("../assets/bedroom_vis.png");
+    background-size: cover;    
+    background-position: center;
+}
+.tile-background-three {
+    background-image: url("../assets/garden-vis.png");
+    background-size: cover;
+    background-position: center;
+}
+.tile-background-four {
+    background-image: url("../assets/kitchen_vis.png");
+    background-size: cover;    
+    background-position: center;
+}
+.tile-background-five {
+    background-image: url("../assets/liv_room_vis.png");
+    background-size: cover;    
+    background-position: center;
+}
+.tile-background-six {
+    background-image: url("../assets/stairs-vis.png");
+    background-size: cover;
+    background-position: center;
+}

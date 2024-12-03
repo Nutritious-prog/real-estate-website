@@ -1,0 +1,29 @@
+.slide-one-bg, .slide-two-bg, .slide-three-bg{
+    overflow: auto;
+    position: relative;
+}
+.slide-one-bg::before, .slide-two-bg::before , .slide-three-bg::before  {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    z-index: -1;
+  
+    background-image: url('../assets/front-wizualizacja.png');
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+    height: 100%;
+  
+    background-position: center;
+    background-repeat: no-repeat;
+    filter: brightness(20%);
+}
+.slide-two-bg::before {
+    background-image: url("../assets/house-two.jpeg");
+    background-size: 130%;
+}
+.slide-three-bg::before {
+    background-image: url("../assets/house-three.jpeg");
+    background-size: 130%;
+}
